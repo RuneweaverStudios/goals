@@ -1,0 +1,7 @@
+{
+  "name": "Goals",
+  "author": "OpenClaw",
+  "version": "1.0.0",
+  "description": "Determines user goals from the Notes folder (scribe), categorizes into personal/professional and short/long-term, and produces a morning action plan with motivation and inspiration.",
+  "main": "scripts/goals.py"
+}
