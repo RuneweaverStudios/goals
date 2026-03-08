@@ -5,7 +5,13 @@
   "displayName": "Goals",
   "description": "Determines user goals from the Notes folder (scribe), categorizes into personal/professional and short/long-term, and produces a morning action plan with motivation and inspiration.",
   "author": "OpenClaw",
-  "tags": [],
+  "tags": [
+    "goal-tracking",
+    "morning-brief",
+    "productivity",
+    "planning",
+    "cron"
+  ],
   "platform": "openclaw",
   "main": "scripts/goals.py"
 }
