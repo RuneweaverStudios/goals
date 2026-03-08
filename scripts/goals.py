@@ -116,7 +116,16 @@ _SKIP_PATTERNS = re.compile(
     r"^\d{4}-\d{2}-\d{2}(T|\s)|"
     r"^-?\s*\*\*\[?\d|"
     r"^\[?\d{4}-\d{2}-\d{2}[T\s]|"  # timestamp start
-    r"^errors\s*\(\d+\)|^warnings\s*\(\d+\)",
+    r"^errors\s*\(\d+\)|^warnings\s*\(\d+\)|"
+    # Code snippet patterns (false positives from log/code lines)
+    r"^(import |from |def |class |return |if |elif |else:|for |while |try:|except |raise )|"
+    r"^(```|~~~)|"  # fenced code block markers
+    r"^\s*(#|//|/\*|\*\s).*$|"  # code comments
+    r"^(pip install|npm install|brew install|apt install|git clone|curl |wget )|"  # shell commands
+    r"^(stdout|stderr|exit[_ ]code|returncode|traceback|stacktrace)[\s:=]|"
+    r"^(GET|POST|PUT|DELETE|PATCH)\s+/|"  # HTTP request log lines
+    r"^\s*\{.*\}\s*$|"  # JSON object lines
+    r"^\s*\[.*\]\s*$",  # JSON array lines
     re.IGNORECASE
 )
 
