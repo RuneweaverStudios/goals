@@ -1,0 +1,17 @@
+{
+  "days_back": 7,
+  "max_items": 10,
+  "classification": {
+    "professional_keywords": [
+      "skill", "blog", "publish", "project", "gateway", "agent", "router",
+      "fix", "bug", "code", "deploy", "clawhub", "openclaw", "api", "work"
+    ],
+    "personal_keywords": [
+      "health", "exercise", "learn", "read", "family", "hobby", "rest",
+      "sleep", "meditate", "walk", "personal"
+    ]
+  },
+  "notes_daily": "Notes/daily",
+  "notes_weekly": "Notes/weekly",
+  "notes_goals": "Notes/goals"
+}

@@ -10,8 +10,15 @@
     "morning-brief",
     "productivity",
     "planning",
-    "cron"
+    "cron",
+    "automation",
+    "self-improvement"
   ],
   "platform": "openclaw",
-  "main": "scripts/goals.py"
+  "main": "scripts/goals.py",
+  "requires": {
+    "anyBins": [
+      "python3"
+    ]
+  }
 }
